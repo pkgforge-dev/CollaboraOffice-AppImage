@@ -27,7 +27,7 @@ pacman -Syu --noconfirm \
     qt6-base               \
     qt6-webengine          \
     qt6-webchannel         \
-    python3-polib
+    python-polib
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
