@@ -53,6 +53,7 @@ mkdir -p $CORE_PATH
 cd $CORE_PATH
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-$VERSION-assets.tar.gz
 tar xvf core-co-$VERSION-assets.tar.gz
+rm -rf core-co-$VERSION-assets.tar.gz
 
 echo "Compiling Collabora Office for $VERSION..."
 echo "---------------------------------------------------------------"
