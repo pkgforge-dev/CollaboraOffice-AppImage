@@ -4,6 +4,9 @@ set -eu
 
 ARCH=$(uname -m)
 VERSION="25.04"
+PREFIX="$(pwd)/AppDir/CollaboraOffice"
+CORE_PATH="$(pwd)/core"
+CODA_PATH="$(pwd)/CODA"
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
@@ -44,16 +47,16 @@ git clone --depth=1 https://github.com/CollaboraOnline/online -b distro/collabor
 
 echo "Getting Collabora Office Asset Pack for $VERSION..."
 echo "---------------------------------------------------------------"
-mkdir -p core
-cd core
+mkdir -p $CORE_PATH
+cd $CORE_PATH
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-$VERSION-assets.tar.gz
 tar xvf core-co-$VERSION-assets.tar.gz
 
 echo "Compiling Collabora Office for $VERSION..."
 echo "---------------------------------------------------------------"
-cd ../CODA
+cd $CODA_PATH
 ./autogen.sh
-./configure --enable-qtapp --with-lo-path=../core/instdir --with-lokit-path=../core/include --enable-debug CXXFLAGS="-O2 -g -fPIC"
+./configure --prefix="$PREFIX" --enable-qtapp --with-lo-path="$CORE_PATH/instdir" --with-lokit-path="$CORE_PATH/include" --enable-debug CXXFLAGS="-O2 -g -fPIC"
 make -j$(nproc)
 make install
 
