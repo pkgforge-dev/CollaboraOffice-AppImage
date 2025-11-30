@@ -20,7 +20,7 @@ export PATH_MAPPING="$CODA_PATH/browser:\${SHARUN_DIR}/browser"
 # Deploy dependencies
 quick-sharun /usr/bin/coda-qt \
     /usr/share/coda-qt \
-    "$CODA_PATH"/browser
+    /usr/share/coolwsd
 
 cp -r "$CODA_PATH"/browser ./AppDir
 
