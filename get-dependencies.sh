@@ -46,9 +46,11 @@ cd CODA
 ./autogen.sh
 ./configure --enable-qtapp --with-lo-path=../core/instdir --with-lokit-path=../core/include --enable-debug CXXFLAGS="-O2 -g -fPIC"
 make -j$(nproc)
+make install
 
-echo "We should get a coda-qt file now. Let's search for it:"
+echo "We should get a coda-qt now. Let's search for it:"
 echo "---------------------------------------------------------------"
-find . -name "coda-qt"
+#find . -name "coda-qt"
+whereis coda-qt
 
 echo "$VERSION"> ~/version

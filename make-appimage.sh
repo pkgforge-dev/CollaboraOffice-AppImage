@@ -4,6 +4,7 @@ set -eu
 
 ARCH=$(uname -m)
 VERSION="$(cat ~/version)"
+APP_LOCATION="$(whereis coda-qt)"
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
@@ -14,7 +15,7 @@ export OUTNAME=CODA-"$VERSION"-anylinux-"$ARCH".AppImage
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun ./CODA/qt/coda-qt
+quick-sharun APP_LOCATION
 
 # Additional changes can be done in between here
 
