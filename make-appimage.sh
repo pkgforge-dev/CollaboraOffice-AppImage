@@ -23,5 +23,12 @@ quick-sharun /usr/bin/coda-qt \
 
 cp -r "$CODA_PATH"/browser ./AppDir
 
+echo '#!/bin/sh
+mkdir -p /tmp/CODA
+ln -sfn "$APPDIR"/browser /tmp/CODA/browser
+' > ./AppDir/bin/fix-bruhmoment.hook
+
+chmod +x ./AppDir/bin/fix-bruhmoment.hook
+
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
