@@ -63,6 +63,8 @@ make install
 echo "We should get a coda-qt now. Let's search for it:"
 echo "---------------------------------------------------------------"
 #find . -name "coda-qt"
-whereis coda-qt
+#whereis coda-qt
+find $PREFIX -name "coda-qt"
 
 echo "$VERSION"> ~/version
+echo "AppDir/CollaboraOffice/bin/coda-qt" > ~/AppLocation

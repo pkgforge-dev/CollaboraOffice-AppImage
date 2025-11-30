@@ -4,7 +4,7 @@ set -eu
 
 ARCH=$(uname -m)
 VERSION="$(cat ~/version)"
-APP_LOCATION="$(whereis coda-qt)"
+APP_LOCATION="$(cat ~/AppLocation)"
 export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
