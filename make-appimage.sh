@@ -15,7 +15,7 @@ export OUTNAME=CODA-"$VERSION"-anylinux-"$ARCH".AppImage
 export DEPLOY_QT=1
 
 # Deploy dependencies
-quick-sharun APP_LOCATION
+quick-sharun $APP_LOCATION
 
 # Additional changes can be done in between here
 
