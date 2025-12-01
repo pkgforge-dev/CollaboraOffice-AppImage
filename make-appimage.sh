@@ -34,8 +34,10 @@ chmod +x ./AppDir/bin/fix-bruhmoment.hook
 
 # debloat
 rm -rf \
-    ./AppDir/browser/archived-packages \
-    ./AppDir/browser/node-modules
+    ./AppDir/core/include         \
+    ./AppDir/browser/po           \
+    ./AppDir/browser/node_modules \
+    ./AppDir/browser/archived-packages
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
