@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Collabora Office
-Exec=coda-qt
-Comment=A powerful collaborative office suite that supports all major document, spreadsheet and presentation file formats.
-StartupWMClass=coda-qt
-Type=Application
-Categories=Office
-Icon=logo
