@@ -34,7 +34,7 @@ echo '#!/bin/sh
 export COOL_TOPSRCDIR="$(pwd)/share/coolwsd"
 ' > ./AppDir/bin/override-topsrcdir.hook
 
-chmod +x ./AppDir/bin/fix-bruhmoment.hook
+chmod +x ./AppDir/bin/override-topsrcdir.hook
 
 # debloat
 rm -rf \
