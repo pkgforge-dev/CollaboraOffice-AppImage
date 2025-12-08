@@ -71,4 +71,4 @@ whereis coda-qt
 
 echo "$VERSION"> ~/version
 echo "$CODA_PATH" > ~/CODA_PATH
-echo "$CORE_PATH" > ~/CODA_PATH
+echo "$CORE_PATH" > ~/CORE_PATH
