@@ -21,7 +21,8 @@ export LOCOREPATH="$CORE_PATH"
 # Deploy dependencies
 quick-sharun /usr/bin/coda-qt \
     /usr/share/coda-qt \
-    /usr/share/coolwsd
+    /usr/share/coolwsd \
+    $CORE_PATH
 
 
 echo 'LOCOREPATH=${SHARUN_DIR}/lib/core' >> ./AppDir/.env
