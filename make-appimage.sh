@@ -17,6 +17,7 @@ export OUTNAME=CODA-"$VERSION"-anylinux-"$ARCH".AppImage
 export ANYLINUX_LIB=1
 export OPTIMIZE_LAUNCH=1
 export LOCOREPATH="$CORE_PATH"
+export PATH_MAPPING_HARDCODED=coda-qt
 
 # Deploy dependencies
 quick-sharun /usr/bin/coda-qt \
