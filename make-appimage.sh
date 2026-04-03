@@ -11,6 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/256x256/apps/com.collaboraoffice.Office.startcenter.png
 export DESKTOP=/usr/share/applications/com.collaboraoffice.Office.desktop
 export OPTIMIZE_LAUNCH=1
+export PATH_MAPPING_HARDCODED=coda-qt
 
 # Deploy dependencies
 quick-sharun \
