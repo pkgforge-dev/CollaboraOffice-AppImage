@@ -1,19 +1,33 @@
-# TEMPLATE-AppImage 🐧
+<div align="center">
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+# CollaboraOffice-AppImage 🐧
 
-* [Latest Stable Release](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/CollaboraOffice-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/CollaboraOffice-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/CollaboraOffice-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/CollaboraOffice-AppImage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/CollaboraOffice-AppImage)](https://github.com/pkgforge-dev/CollaboraOffice-AppImage/releases/latest)
+
+<p align="center">
+  <img src="https://github.com/CollaboraOnline/online/blob/main/windows/coda/Assets/Square44x44Logo.altform-unplated_targetsize-256.png" width="128" />
+</p>
+
+
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/CollaboraOffice-AppImage/releases/latest) | [Click here](https://github.com/CollaboraOnline/online) |
+
+</div>
 
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun), which makes it extremely easy to turn any binary into a portable package without using containers or similar tricks.
+AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
 
-**This AppImage bundles everything and should work on any linux distro, even on musl based ones.**
+**This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
-This AppImage can work **without FUSE** at all thanks to the [uruntime](https://github.com/VHSgunzo/uruntime)
+This AppImage doesn't require FUSE to run at all, thanks to the [uruntime](https://github.com/VHSgunzo/uruntime).
 
-More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)
+This AppImage is also supplied with a self-updater by default, so any updates to this application won't be missed, you will be prompted for permission to check for updates and if agreed you will then be notified when a new update is available.
+
+Self-updater is disabled by default if AppImage managers like [am](https://github.com/ivan-hc/AM), [soar](https://github.com/pkgforge/soar) or [dbin](https://github.com/xplshn/dbin) exist, which manage AppImage updates.
 
 <details>
   <summary><b><i>raison d'être</i></b></summary>
@@ -23,4 +37,4 @@ More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/
 
 ---
 
-# Fork this repository to quickly make an AppImage using the [Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) tools
+More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)
